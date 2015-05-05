@@ -1,0 +1,22 @@
+<h1>{{homes.length}} maisons trouvees.</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<td>id</td>
+			<td>Nombre de pièce</td>
+			<td>Superficie</td>
+			<td>Adresse</td>
+			<td>IP</td>
+		</tr>
+	</thead>
+	<tbody>
+  <tr ng-repeat="home in homes">
+    <td>{{ home.id }}</td>
+    <td>{{ home.nbRoom }}</td>
+    <td>{{ home.surface }}</td>
+    <td>{{ home.address }}</td>
+    <td>{{ home.IPaddress }}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+<h1>{{devices.length}} appareils trouves.</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<td>Id</td>
+			<td>Consommation (Watt/Heure)</td>
+			<td>Dimensions</td>
+			<td>Programmable</td>
+			<td>Class energetique</td>
+		</tr>
+	</thead>
+	<tbody>
+  <tr ng-repeat="device in devices">
+    <td>{{ device.id }}</td>
+    <td>{{ device.consumption_avg }} </td>
+    <td>H:{{ device.height }}/L:{{ device.width }}/l:{{ device.lenght }}</td>
+    <td>{{ device.programmable }}</td>
+    <td>{{ device.energyClass }}</td>
+  </tr>
+  </tbody>
+</table>
